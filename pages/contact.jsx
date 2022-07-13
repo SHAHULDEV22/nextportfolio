@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import React from 'react'
 
 const contact = () => {
@@ -39,7 +40,7 @@ const contact = () => {
       <h1 className='text-4xl text-indigo-600 capitalize font-bold text-center pb-4'>contact me</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4 text-center '>
         <div className='w-1/2 mx-auto'>
-          <img src='/vercel.svg' alt='logo' />
+          <Image src='/vercel.svg' width={4} height={3} alt='logo' layout={'responsive'}/>
         </div>
         <div>
           <h2 className='text-3xl text-indigo-600 capitalize font-bold text-center py-4'>get in touch</h2>
