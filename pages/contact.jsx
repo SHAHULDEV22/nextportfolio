@@ -2,6 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 const contact = () => {
   const dataItems = [
     {
@@ -40,7 +42,7 @@ const contact = () => {
       <h1 className='text-4xl text-indigo-600 capitalize font-bold text-center pb-4'>contact me</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4 text-center '>
         <div className='w-1/2 mx-auto'>
-          <Image src='/vercel.svg' width={4} height={3} alt='logo' layout={'responsive'}/>
+          <Image src={prefix + '/vercel.svg'} width={4} height={3} alt='logo' layout={'responsive'} />
         </div>
         <div>
           <h2 className='text-3xl text-indigo-600 capitalize font-bold text-center py-4'>get in touch</h2>
