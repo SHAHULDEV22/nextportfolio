@@ -2,11 +2,6 @@
 module.exports = {
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    images: {
-      unoptimized: true,
-    },
-  },
   basePath: '/nextportfolio',
   assetPrefix: '/nextportfolio'
 }
