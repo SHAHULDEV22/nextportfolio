@@ -4,7 +4,7 @@ module.exports = {
   swcMinify: true,
   experimental: {
     images: {
-      unoptimized: false,
+      unoptimized: true,
     },
   },
   basePath: '/nextportfolio',
