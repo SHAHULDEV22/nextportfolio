@@ -31,9 +31,7 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: /nextportfolio
-      - run: npm run export
-        env:
-          NEXT_PUBLIC_BASE_PATH: /nextportfolio
+          
       - run: touch ./out/.nojekyll
 
       - name: Deploy 🚀
