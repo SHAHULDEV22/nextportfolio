@@ -38,15 +38,15 @@ const contact = () => {
     }
   ]
   return (
-    <>
-      <h1 className='text-4xl text-indigo-600 capitalize font-bold text-center pb-4'>contact me</h1>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-4 text-center '>
+    <div className='container mx-auto'>
+      <h1 className='h1'>contact me</h1>
+      <div className='grid-2'>
         <div className='w-1/2 mx-auto'>
           <Image src={prefix + '/vercel.svg'} width={4} height={3} alt='logo' layout={'responsive'} />
         </div>
         <div>
-          <h2 className='text-3xl text-indigo-600 capitalize font-bold text-center py-4'>get in touch</h2>
-          <p className='lg:text-xl text-lg font-medium py-3'>I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with UI|UX Designing, Frontend Development, Illustrations.</p>
+          <h2 className='h2'>get in touch</h2>
+          <p className='p'>I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with UI|UX Designing, Frontend Development, Illustrations.</p>
           <div className='py-4 flex justify-center gap-4'>
             {dataItems.map((data) => (
               <Link href={data.link} key={data.name}>
@@ -58,7 +58,7 @@ const contact = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
