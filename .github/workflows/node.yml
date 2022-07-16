@@ -25,7 +25,8 @@ jobs:
           node-version: ${{ matrix.node }}
       - name: Installing my packages
         run: npm ci
-
+        env: 
+          CI: true
       - name: Build my App
         run: npm run build
 
